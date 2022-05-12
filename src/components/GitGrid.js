@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useFetchGif } from '../hooks/useFetchGifs';
-import { GidGridItem } from './GidGridItem';
+import { GifGridItem } from './GifGridItem';
 
 export const GitGrid = ({ category }) => {
 
@@ -17,7 +17,7 @@ export const GitGrid = ({ category }) => {
             {<div className='card-grid'>
                 {
                     images.map(img => (
-                        <GidGridItem
+                        <GifGridItem
                             key={img.id}
                             {...img}
                         />
